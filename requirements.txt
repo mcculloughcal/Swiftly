@@ -1,0 +1,4 @@
+Flask==2.2.5
+PyAudio==0.2.13
+Wave==0.0.2
+requests==2.31.0
