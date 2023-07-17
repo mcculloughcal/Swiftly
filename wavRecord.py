@@ -22,18 +22,10 @@ for i in range(0, int(rate / chunk * seconds)):
     frames.append(data)
 print("finished recording")
 
-
 # stop Recording
 stream.stop_stream()
 stream.close()
 audio.terminate()
-
-'''
-# create binary file from recording
-file = open('newFile.mp3', "wb")
-file.write((b''.join(frames)))
-file.close()
-'''
 
 # create wav from recording
 file = wave.open('newWav.wav', 'wb')
